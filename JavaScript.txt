@@ -1,0 +1,276 @@
+1.1: Create a page to display “Welcome to JavaScript”.
+
+
+     <!DOCTYPE html>
+<html>
+<head>
+<title> Welcome to JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+document.write("Welcome to JavaScript - The Scripting Language")
+</script>
+</body>
+</html>
+
+
+1.2: Create prob2.html to display Formatted Hello World by using
+     JavaScript by embedding Hello World in <H1> tag.
+
+     
+     <html>
+<head>
+<title>Displaying Formatted Text using JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+//TODO: Display hello world embedded in h1 tag with align attribute value right
+</script>
+</body>
+</html>
+
+
+1.3: Create page to show use of external JavaScript
+
+
+<html>
+<head><title>Using External Script file in HTML Document</title>
+<script src="HelloWorld.js">
+</script>
+</head>
+<body>
+<hr>
+<p>The actual script is in external script file called "HelloWorld.js"</p>
+<script>
+//TODO: Insert the code here to invoke the function sayHello() in the file HelloWorld.js
+</script>
+<hr>
+</body>
+</html>
+
+
+function sayHello()
+{
+//TODO:return the string “Hello World“
+}
+
+
+the actual scripr is in external script called "HelloWorld.js"
+This text is displayed by calling external function: Hello World
+
+
+<html>
+<head><title>Embedding Script tag in HTML Document</title>
+<script>
+//TODO:use write method in document object to display the desired output
+</script>
+<hr>
+<script src="Hello.js">
+</script>
+</head>
+<body>
+<script>
+//TODO: use write method in document object to display desired the output
+</script>
+<hr>
+<p><code>The actual script is in external script file called "Hello.js"</code></p>
+<script>
+//TODO: Insert your code here to call the function Disp_Hello() from the Hello.js file
+</script>
+<hr>
+</body>
+</html>
+
+function Disp_Hello()
+{
+//TODO:return the string “Hello World“
+}
+
+This text is displayed from the script tag embedded in the Head tag of the document
+
+
+1.4: Using Variable in many Script tags
+
+<html>
+<head><title>Embedding Script tag in HTML Document</title>
+<script>
+/*
+TODO:define variable headVar and initialize it to some integer value and display the value as
+shown in the Fig 6
+*/
+</script>
+<hr>
+</head>
+<body>
+<script>
+/*
+
+var msg;
+msg="<p><code>The actual script is in external script file called common.js</code></p>";
+function add_nos(headVar,bodyVar)
+{
+//TODO: display the contents of the variable "msg"
+//TODO: display the addition of two numbers
+}
+
+script embedded in Head tag
+----------------------------
+value stored in variable headvar is 10
+
+
+script embedded in Body tag
+----------------------------
+value stored in variable bodyvar is 65
+
+
+the actual script is in external script file called "common.js"
+
+The sume of the variables headvar and bodyvar is 75
+
+
+
+5 .1: Window object
+Create a prob1.html web page which has the following items as shown in the figure given
+below:
+--> a form that accepts window parameters width, height, title, left and top parameters
+    from text field, and
+--> two buttons with the labels New Window and Reset to the web page
+ 
+
+<html>
+<head>
+<title> window example </title>
+</head>
+<script language="javascript" >
+function nwindow()
+{
+/*TODO: get the height, width, left and top from the form object and pass the values to
+open method of window along with the name of the html file to be opened in the new
+window.*/
+}
+</script>
+<body >
+<form id="frmlab">
+<table border="1" cellspacing="8" cellpadding="10" bordercolor="blue">
+// Create Table as shown in fig 6.2
+</table>
+</form>
+</body>
+</html>
+
+8.1: Form Validation
+  Create a prob1.html web page, as shown below, and calculate Payment Information based on
+  Loan Information. Validate Loan information textfields for numbers. The Payment
+  Information textfields should be uneditable. The other constraints are as follows:
+-->  Amount of Loan should not be more than 15 lakhs.
+-->  Repayment period should be between 7 yrs to 15 yrs.
+
+/*
+TODO:
+the value of the field rate is passed as a argument to this function validrate onblur event of
+the loan text field. perform validations for empty, nan and the validations specified in the
+problem statement
+*/
+In the function validyrs(field)
+/*
+TODO:
+the value of the field years is passed as a argument to this function validyrs onblur event of
+the loan text field. perform validations for empty, nan and the validations specified in the
+problem statement
+*/
+In the function calculate()
+/*
+TODO:
+calculate the monthly payment, total payment, total interest payment on click of the button
+with label "compute"
+*/
+-------------------------------
+8.2 Validate Field
+----------------------------
+Some Tips
+In the function mailme(form)
+/*
+TODO: validate the fields and display error message if it is empty. if the form has valid
+values concatenate the email ids and return the value to the onsubmit event invoked from
+form tag.
+use mailto:toemailid@site.com?subject= +" variable which holds the value of the to field
+if outlook is configured, the above line will open the outlook mail window
+*/
+----------------------------
+8.3: Registration Form
+-----------------------------
+Some Tips
+In the function isDate()
+/*
+TODO:
+Retrieve the month,date and year values from the drop down list box and validate the
+fields. At least one item should be selected or else display error message
+*/
+}
+In the function isName()
+/*
+TODO:
+Validate Login name, if login name field is blank display an error message. Also login name
+should not start with number or special characters
+*/
+In the function isPass()
+/*
+TODO:
+Validate the password field. Password field should not be empty, should not be less than 6
+characters and this field should match with re-type password field
+*/
+In the function isFullName()
+/*
+TODO:
+Validate the first name and the last name field. Both the fields should not be empty and
+should not contain numbers.
+*/
+In the function isHintQuesAns()
+/*
+TODO:
+Validate hint question. If nothing is selected in hint question field then ensure that the
+create a question field is not empty and vice versa.Also ensure that hint answer is not
+empty.
+*/
+In the function isCountry()
+/*
+TODO:
+Validate the country dropdown list and ensure that atleast one item is selected or else
+display an error message
+*/
+In the function isCity()
+/*
+TODO:
+Validate the city dropdown list and ensure that atleast one item is selected or else display
+an error message
+*/
+In the function validate()
+/*
+TODO:
+Use all the methods above here to validate all the required fields.
+Invoke this method onclick event of the "Register Me" button.
+If all the validation are successful, it should display alter message "Validation Successful:
+*/
+-------------------------------
+Lab 9. Regular Expressions in JavaScript
+-------------------------------------
+9.1: Regular Expression
+------------------------------
+Some Tips
+In the function demomatchclick()
+/*
+TODO:
+define a variable re which is the regular expression object, to which the regular expression
+pattern is passed as an argument. define a variable str which holds the string from subject
+field match the "str" with "re" using the match method of the string object and display
+appropriate messages
+*/
+In the function demoshowmatchclick()
+/*
+TODO:
+Store the regular expression pattern in a variable "re" and invoke exec method of regular
+expression object which takes the matching string as argument and returns the index of the
+matching string found
+*/
+
+

@@ -1,0 +1,127 @@
+------------------------------------------------------------------------------------------
+				1.1: Writing Simple XML File
+------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<breakfast_menu>
+<food>
+<name>Belgian Waffles</name>
+<price>$5.95</price>
+<description>two of our famous Belgian Waffles with plenty of real maple
+syrup</description>
+<calories>650</calories>
+</food>
+<food>
+<name>Strawberry Belgian Waffles</name>
+<price>$7.95</price>
+<description>light Belgian waffles covered with strawberries and whipped
+cream</description>
+<calories>900</calories>
+</food>
+<food>
+<name>Berry-Berry Belgian Waffles</name>
+<price>$8.95</price>
+<description>light Belgian waffles covered with an assortment of fresh
+berries and whipped cream</description>
+<calories>900</calories>
+</food>
+</breakfast_menu>
+-------------------------------------------------------------------------------------
+				Lab 2. Writing XML Schemas (XSD)
+-------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- definition of simple elements -->
+<xs:element name="orderperson" type="xs:string"/>
+<xs:element name="name" type="xs:string"/>
+<xs:element name="address" type="xs:string"/>
+<xs:element name="city" type="xs:string"/>
+<xs:element name="country" type="xs:string"/>
+<xs:element name="title" type="xs:string"/>
+<xs:element name="note" type="xs:string"/>
+<xs:element name="quantity" type="xs:positiveInteger"/>
+<xs:element name="price" type="xs:decimal"/>
+<!-- definition of attributes -->
+<xs:attribute name="orderid" type="xs:string"/>
+<!-- definition of complex elements -->
+<xs:element name="shipto">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="name"/>
+<xs:element ref="address"/>
+<xs:element ref="city"/>
+<xs:element ref="country"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="item">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="title"/>
+<xs:element ref="note" minOccurs="0"/>
+<xs:element ref="quantity"/>
+<xs:element ref="price"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="shiporder">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="orderperson"/>
+<xs:element ref="shipto"/>
+<xs:element ref="item" maxOccurs="unbounded"/>
+</xs:sequence>
+<xs:attribute ref="orderid" use="required"/>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<shiporder orderid="889923"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="shiporder.xsd">
+<orderperson>John Smith</orderperson>
+<shipto>
+<name>Ola Nordmann</name>
+<address>Langgt 23</address>
+<city>4000 Stavanger</city>
+<country>Norway</country>
+</shipto>
+<item>
+<title>Empire Burlesque</title>
+<note>Special Edition</note>
+<quantity>1</quantity>
+<price>10.90</price>
+</item>
+<item>
+<title>Hide your heart</title>
+<quantity>1</quantity>
+<price>9.90</price>
+</item>
+</shiporder>
+
+-------------------------------------------------------------------------------------------
+			Create XSD for the given book details in “Library.xml” file
+--------------------------------------------------------------------------------------------
+<Library >
+<Book>
+<Title>Dead to the World </Title>
+<Author>Charlaine Harris </Author>
+<Publisher>ABC Publishing company</Publisher>
+<Cover cover_type="Hardbook"></Cover>
+<Category cat_type="Horror"></Category>
+<ISBN isbn_num="Z1"></ISBN>
+<Rating rate_Val="5"></Rating>
+<Price>$13.97 </Price>
+<Comments>A good book</Comments>
+</Book>
+<Book>
+<Title>Gardens of the Moon </Title>
+<Author>Steven Erikson</Author>	
+<Publisher>XYZ Publishers</Publisher>
+<Cover cover_type="Hardbook"></Cover>
+<Category cat_type="SCI-FI"></Category>
+<ISBN isbn_num="Z3"></ISBN>
+<Rating rate_Val="4"></Rating>
+<Price>$17.65</Price>
+<Comments>A wonderful book</Comments>
+</Book>
+</Library>	

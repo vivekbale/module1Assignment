@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is the first html page</title>
+</head>
+<body>
+This is the first html page created
+</body>
+</html>
+----------------------------------------------------------
+				1.2
+-------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Page</title>
+<META [http-equiv] [contents=n]>
+<meta http-equiv=refresh content=60>
+-will refresh the current document after every 60 seconds.
+<meta http-equiv=refresh content=”20;url=c:/html/html34.htm”>
+-will load secified file after 20 seconds.
+<base href=“c:/mydir/html/”>
+<!-- you to use shortcuts in your URLs if you must reference several files from the same location.-->
+</head>
+<body> Hello World!! </body>
+</html>
+-------------------------------------------------------------------------
+				1.3
+--------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head><title>This is the first html page</title>
+<body>This is the first html page created
+<h1>This is level 1 heading</h1>
+<h2>This is level 2 heading</h2>
+<h3>This is level 3 heading</h3>
+</body>
+</head></html>
+-------------------------------------------------------------------------
+				1.4
+-------------------------------------------------------------------------
+<html>
+<head>
+<title>Address Example</title>
+</head>
+<body>
+<font size="2">Your address:</font><br>
+Abc Xyz<br>
+<address>b/102 royal palms,</address>
+<address>off. s. v. road,</address>
+<address>Andheri-West,</address><address>Mumbai.</address>
+</body>
+</html>
+---------------------------------------------------------------------------
+				1.5
+----------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head><title>
+PREFORMATTED TEXT EXAMPLE
+</title></head>
+<body>
+<h3>GROSS SALE WITH PREFORMATTING</h3>
+<hr>
+<pre>
+<b>GROSS SALES</b>
+SALESMAN SALES RANKING
+TIM $10,000 2<BR>
+TOM $ 5,000 5<BR>
+TAMMY $20,000 1<BR>
+Each line has a carriage return after it.
+</pre>
+<h3>GROSS SALE WITHOUT PREFORMATTING</h3>
+<p><hr>
+<b>GROSS SALE<b>
+SALESMAN SALES RANKING
+TIM $10,000 2<BR>
+TOM $ 5,000 5<BR>
+TAMMY $20,000 1<BR>
+</body>
+----------------------------------------------------------------------------
+				creating tables problem 1
+----------------------------------------------------------------------------
+<! DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>Fruits Table</TITLE>
+</HEAD>
+<BODY>
+<TABLE border="1" >
+<CAPTION>Fun with food</CAPTION>
+<COLGROUP>
+<COL>
+</COLGROUP>
+<COLGROUP>
+<COL align="center">
+<COL>
+</COLGROUP>
+<THEAD>
+<TR>
+<TH style="background-color:yellow">Fruit</TH>
+<TH style="background-color:yellow">Color</TH>
+<TH style="background-color:yellow">Cost per pound</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD>Grapes</TD>
+<TD>Purple</TD>
+<TD>1.25</TD>
+</TR>
+<TR>
+<TD>Cherries</TD>
+<TD>Red</TD>
+<TD>154.79</TD>
+</TR>
+<TR>
+<TD>Kiwi</TD>
+<TD>Brown</TD>
+<TD>10.00</TD>
+</TR>
+</TBODY>
+<TFOOT>
+<TR>
+<TH colspan="3">This is the footer area</TH>
+</TR>
+</TFOOT>
+</TABLE>
+</BODY>
+</HTML>
+----------------------------------------------------------------------------
+			working with lists problem1
+----------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>Working with Lists</title>
+</head>
+<body>
+<p>The following is a demonstration of various list styles
+<ol start="3">
+An ordered list i.e. using OL and LI
+<li>Seepz
+<li value="10">TTC
+<li>MIDC
+</ol>
+<hr>
+<ul style="list-style-type: square">
+Unordered list i.e. using UL and LI
+<li>Seepz
+<li>TTC
+<li>MIDC
+</ul>
+<hr>
+Glossary List - List of locations
+<dl>
+<dt>Seepz
+<dd>Andheri
+<dt>TTC
+<dd>New Bombay
+<dt>MIDC
+<dd>Andheri
+</dl>
+</body>
+</html>
+------------------------------------------------------------------------------
+			working with links problem1
+-----------------------------------------------------------------------------
+DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Big Company</TITLE>
+</HEAD>
+<BODY>
+The Big company was founded in 1956.
+</BODY>
+</HTML>
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Products</TITLE>
+</HEAD>
+<BODY>
+The following are the products offered :
+<UL>
+<LI>Personal Health
+<LI>Beverages
+<LI>Garments
+<LI>Books
+</UL>
+</BODY>
+</HTML>
+<!DOCTYPE html>
+<HTML>
+<BODY>
+<TABLE>
+<TR>
+<TD>
+<A href="about.htm">About</A><BR><BR>
+<A href="products.htm">Products</A><BR><BR>
+<A href="mailto:edude@igate.com">Contact</A><BR><BR>
+</TD>
+<TD>
+<H1>Welcome to Big Company</H1>
+<HR>
+<P>This is a very simple layout that would have nearly been impossible to do without tables</P>
+</TD>
+<TD><BR></TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+------------------------------------------------------------------------------
+				image handling problem1
+-----------------------------------------------------------------------------
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Description Page</TITLE>
+</HEAD>
+<BODY>
+<H2>Description of the various sections of the bike</H2>
+<TABLE>
+<TR>
+<TD><A id="engine"></A>
+<B> This is the engine of the bike.It is a twin cylinder,16 valve, turbo charged liquid cooled
+specimen.Truly state of the art.</B> </TD></TR>
+<TR>
+<TD><A id="seat"></A>
+<B> This is the seat of the bike.Designed to seat two comfortably and
+upholstered in calf leather.</B></TD></TR>
+<TR>
+<TD><A id ="fork"></A>
+<B> This is the front wheel section of the bike.The air-suspension forks
+are designed to absorb even the harshest of shocks while riding. The
+disc-brakes on the front-wheel facilitate immediate braking even at
+break-neck speeds.</B></TD></TR>
+<TR>
+<TD><A id ="head"></A>
+<B> This is the head section of the bike.The front panel is carefully
+designed to provide easy access to the various functions of the bike. The
+headlight is powered by 16 volt batteries to provide clear road vision even
+in pitch darkness.</B></TD></TR>
+</TABLE>
+</BODY></HTML>
+<HTML>
+<HEAD>
+<TITLE>Bike Image</TITLE>
+</HEAD>
+<BODY BGCOLOR = "maroon">
+<MAP NAME = "bikemap">
+<AREA SHAPE = "RECT" COORDS = "198,228,246,273" HREF = "desc.htm#engine">
+<AREA SHAPE = "RECT" COORDS = "105,140,219,193" HREF = "desc.htm#seat">
+<AREA SHAPE = "RECT" COORDS = "341,221,396,284" HREF = "desc.htm#fork">
+<AREA SHAPE = "RECT" COORDS = "334,130,377,171" HREF = "desc.htm#head">
+</MAP>
+<IMG src = "bike.gif" ALT = "Imgmap" USEMAP = "#bikemap">
+</BODY>
+</HTML>
+---------------------------------------------------------------------------
+			working with frames problem1
+----------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frames</title>
+</head>
+<body>
+<iframe src="content.html" width="100"></iframe>
+<iframe name="side-2" width="1000"></iframe>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+<a href="courses.html" target="side-2"> courses </a><br><br>
+<a href="menu.html" target="side-2"> menu </a>
+</body>
+</html>
+<html>
+<head>
+<title>Sample Page</title>
+</head>
+<body >
+<h1>Header 1</h1>
+<ol>
+<li>Oracle8</li>
+<li>Web Appl Server</li>
+<li>Designer/2000</li>
+</ol>
+Sample text
+</body>
+</html>
+<html>
+<head>
+<title>Cafeteria Menu Application</title>
+</head>
+<body>
+<h3>cafeteria menu for Jan 11, 1998</h3>
+<p>
+Entrees:<br>
+<ul>
+<li>Filet of <br>Sole
+<li>Vegeterian Chili
+</ul>
+</body>
+</html>
+-----------------------------------------------------------------------------
+			forms for user input problem1
+-----------------------------------------------------------------------------
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Form Methods</TITLE>
+</HEAD>
+<BODY bgcolor="skyblue">
+<FORM action="mailto:edude@igate.com" name="ab" method="post"
+enctype="multipart/form-data">
+<P>
+<LABEL>Enter the password
+<INPUT type="password"name="USERNAME" size="20" value="abc" tabindex="3"></LABEL>
+<INPUT type="hidden" name="coname" value="PCS"> Enter your surname:
+<INPUT type="text" name="surname" SIZE="20" readonly value="Sukuru" tabindex="2"
+maxlength="30"> <BR> <BR>
+Address :
+<TEXTAREA name="addr" Rows="5" cols="40" tabindex="0" accesskey="A">Enter ur address
+</TEXTAREA>
+<BR> <BR> Select the training programs attended : <BR>
+<INPUT type="checkbox" name="s-cobol"> COBOL
+<INPUT type="checkbox" name="s-idms" checked> IDMS
+<INPUT type="checkbox" name="s-java"> Java <BR> <BR>
+Select the group you belong to :
+<INPUT type="radio" name="s-grp" value="grp1"> Group 1
+<INPUT type="radio" name="s-grp" value="grp2" checked> Group 2
+<INPUT type="radio" name="s-grp" value="grp3"> Group 3
+<INPUT type="radio" name="s-grp" value="oth"> Others <BR> <BR>
+Which training program would you like to attend ? <SELECT Name="pref">
+<OPTION value="JS">JavaScript
+<OPTION value="CORBA">CORBA
+<OPTION value="VB6">Visual Basic 6
+</SELECT>
+</P>
+<INPUT type="file" name="fnm"> <BR><BR>
+<INPUT type="button" name="but" value="Exit">
+<INPUT type="Submit" Value="Save" name="s-but">
+<INPUT type="reset" Value="Reset">
+</FORM>
+</BODY>
+</HTML>
+-----------------------------------------------------------------------------
+				new form elements problem1
+-----------------------------------------------------------------------------
+<! DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="height=device-height,width=device-width,user-scalable=no" />
+<meta charset="UTF-8">
+<title>New Form Elements</title>
+</head>
+<body>
+<form name="Formelements" action="index2.jsp">
+<table>
+<tr>
+<td><label for="demo">Placeholder : </label></td>
+<td><input id ="demo" name="demo" placeholder="Enter Numbers Only" /></td>
+</tr>
+<tr>
+<td><label for="nameauto">Autofocus : </label></td>
+<td><input id ="nameauto" name="nameauto" type="text" autofocus/></td>
+</tr>
+<tr>
+<td><label for="range">Range : </label></td>
+<td><input id="range" name="range" type="range" min="0" max="50" value="10" /><td>
+</tr>
+<tr>
+<td><label for="search">Search : </label></td>
+<td><input id="search" name="search" type="search" placeholder="Search..." /><td>
+</tr>
+<tr>
+<td><label for="date">Date : </label></td>
+<td>
+<input id="date" name="date" type="date" min="2010-08-14" max="2014-08-14" value=""/></td>
+</tr>
+<tr>
+<td><label for="date">Week : </label></td>
+<td><input id="date" name="date" type="week" value=""/></td>
+</tr>
+<tr>
+<td><label for="date">Month : </label></td>
+<td><input id="date" name="date" type="month" value=""/></td>
+</tr>
+<tr>
+<td><label for="date">Time : </label></td>
+<td><input id="date" name="date" type="time" value=""/></td>
+</tr>
+<tr>
+<td><label for="number">Number : </label></td>
+<td>
+<input id="number" name="number" type="number" step="1" min="-5" max="10" value="0" />
+<td>
+</tr>
+<tr>
+<td><label for="required">Required : </label></td>
+<td><input id="required" name="user" type="text" required /></td>
+</tr>
+<tr>
+<td><label for="email">Email:</label></td>
+<td><input id="email" name="email" type="email" required/></td>
+</tr>
+<tr>
+<td><label for="color">Color : </label></td>
+<td><input id="color" name="color" type="color" placeholder="e.g. #bbbbbb" /><td>
+</tr>
+<tr>
+<td><label for="country_name">Country : </label></td>
+<td><input id="country_name" name="country_name" type="text" list="country" /></td>
+<td><datalist id="country">
+<option value="Afghanistan">
+<option value="Albania">
+<option value="Algeria">
+<option value="Andorra">
+<option value="Angola">
+<option value="Car">
+<option value="Cat">
+<option value="City">
+<option value="Cup">
+<option value="Clip">
+</datalist></td>
+</tr>
+<tr><td colspan="2"><audio controls >
+<source src= "god.mp3" type="audio/mpeg" />
+<source src= "1vs0_JuniorGroove.ogg" type="audio/ogg"/>
+</audio></td></tr>
+<!-- audio code works on Firefox and opera .ogg format only -->
+<tr>
+<td colspan="2"><video
+src="http://upload.wikimedia.org/wikipedia/commons/7/79/Big_Buck_Bunny_small.ogv" controls
+width="300" height="250">
+</video></td></tr>
+<!-- Video code works only on Firefox. .ogg format. various ogg file extension are
+.ogx, .ogv, .oga, .spx. -->
+</table>
+<table>
+<tr>
+<td align="right"><button type="submit" name="submit"
+value="Submit">Submit</button></td>
+<td align="left"><button type="reset" name="reset" value="reset">Reset</button></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+------------------------------------------------------------------------------------
